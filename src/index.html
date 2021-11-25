@@ -6,13 +6,191 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desenvolvedor M3</title>
+  <script src="https://kit.fontawesome.com/a36f27fccb.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="main.css" />
 </head>
 
-<body>
-
+<body class="index">
+  <header>
+    <a href="/"><img src="/img/logo-m3.png" alt=""></a>
+    <div class="cart">
+      <i class="fas fa-shopping-bag"></i>
+      <div class="contentCart">
+        
+      </div>
+    </div>
+    <div class="line"></div>
+  </header>
+    <main>
+      <div class="title">
+        <h1>Blusas</h1>
+        <select name="order" id="order">
+          <option value="" selected hidden>Ordenar por:</option>
+          <option value="1">mais recentes</option>
+          <option value="2">menor preço</option>
+          <option value="3">maior preço</option>
+        </select>
+      </div>
+      <div class="containerTotal">
+        <form action="" id="apply">
+          <div class="filters">
+            <div class="filterTitle">
+              <div class="filterSubTitle" id="filter-subtitle">
+                <button id ="filter-button">Filtrar</button>
+                <button id ="order-button">Ordenar</button>
+              </div>
+              
+            </div>
+            <div class="orderList" id="order-list">
+              <div class="orderTitle">
+                <h2>ORDENAR</h2>
+                <p class="" id = "less-order">x</p>
+              </div>
+              <div class="lineMobile"></div>
+              <p>Mais recentes</p>
+              <p>Menor preço</p>
+              <p>Maior preço</p>
+            </div>
+            <div class="filterContent" id="filter-content">
+              <div class="filterTitleMobile">
+                <h2>FILTRAR</h2>
+                <p class="lessFilters" id="less-filters">x</p>
+              </div>
+              <div class="lineMobile"></div>
+              <div>
+                <label class="colours" for="colours">
+                  <div class="filterTitleMobile">
+                    <h3>CORES</h3>
+                    <p class="icono ocultar" id="less-colours">x</p>
+                    <p class="icono" id="more-colours">+</p>
+                  </div>
+                  <div class="coloursContent" id="colours-content">
+                    <div>
+                      <input type="radio" name="colours" value="amarelo" id="amarelo"><label for="amarelo">Amarelo</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="colours" value="azul" id="azul"><label for="azul">Azul</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="colours" value="branco" id="branco"><label for="branco">Branco</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="colours" value="cinza" id="cinza"><label for="cinza">Cinza</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="colours" value="laranja" id="laranja"><label for="laranja">Laranja</label>
+                    </div>
+                    <p class="seeMore" id="see-more">ver todas as cores <i class="fas fa-chevron-down"></i></p>
+                    <div class="colorOcultar" id="show-colours">
+                      <input type="radio" name="colours" value="verde" id="verde"><label for="verde">Verde</label>
+                    </div>
+                    <div class="colorOcultar" id="show-colours">
+                      <input type="radio" name="colours" value="vermelho" id="vermelho"><label for="vermelho">Vermelho</label>
+                    </div>
+                    <div class="colorOcultar" id="show-colours">
+                      <input type="radio" name="colours" value="preto" id="preto"><label for="preto">Preto</label>
+                    </div>
+                    <div class="colorOcultar" id="show-colours">
+                      <input type="radio" name="colours" value="rosa" id="rosa"><label for="rosa">Rosa</label>
+                    </div>
+                    <div class="colorOcultar" id="show-colours">
+                      <input type="radio" name="colours" value="vinho" id="vinho"><label for="vinho">Vinho</label>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="sizes">
+                <div class="filterTitleMobile">
+                  <h3>TAMANHOS</h3>
+                  <p class="icono ocultar" id="less-sizes">x</p>
+                  <p class="icono" id="more-sizes">+</p>
+                </div>
+                  <div class="sizesContent" id="sizes-content">
+                    <div class="flex" id="p-size"> 
+                      <input type="radio" name="sizes" value="p" id="p-input"><label class="option" for="p-input">P</label>
+                    </div>
+                    <div class="flex" id="m-size">
+                      <input type="radio" name="sizes" value="m" id="m-input"><label class="option" for="m-input">M</label>
+                    </div>
+                    <div class="flex" id="g-size">
+                      <input type="radio" name="sizes" value="g" id="g-input"><label class="option" for="g-input">G</label>
+                    </div>
+                    <div class="flex" id="gg-size">
+                      <input type="radio" name="sizes" value="gg" id="gg-input"><label class="option" for="gg-input">GG</label>
+                    </div>
+                    <div class="flex" id="u-size">
+                      <input type="radio" name="sizes" value="u" id="u-input"><label class="option" for="u-input">U</label>
+                    </div>
+                    <div class="flex" id="36-size">
+                      <input type="radio" name="sizes" value="36" id="36-input"><label class="option" for="36-input">36</label>
+                    </div>
+                    <div class="flex" id="38-size">
+                      <input type="radio" name="sizes" value="38" id="38-input"><label class="option" for="38-input">38</label>
+                    </div>
+                    <div class="flex" id="40-size">
+                      <input type="radio" name="sizes" value="40" id="40-input"><label class="option" for="40-input">40</label>
+                    </div>
+                    <div class="flex" id="42-size">
+                      <input type="radio" name="sizes" value="42" id="42-input"><label class="option" for="42-input">42</label>
+                    </div>
+                    <div class="flex" id="44-size">
+                      <input type="radio" name="sizes" value="44" id="44-input"><label class="option" for="44-input">44</label>
+                    </div>
+                    <div class="flex" id="46-size">
+                      <input type="radio" name="sizes" value="46" id="46-input"><label class="option" for="46-input">46</label>
+                    </div>
+                    
+                  </label>
+                  </div>
+              </div>
+              <div class="prices">
+                <label for="prices">
+                  <div class="filterTitleMobile">
+                    <h3>FRAIXA DO PREÇIO</h3>
+                    <p class="icono ocultar" id="less-prices">x</p>
+                    <p class="icono" id="more-prices">+</p>
+                  </div>
+                  <div class="pricesContent" id="prices-content">
+                    <div>
+                      <input type="radio" name="prices" value="1" id="price1"><label for="price1">de R$0 até R$50</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="prices" value="2" id="price2"><label for="price2">de R$51 até R$150</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="prices" value="3" id="price3"><label for="price3">de R$151 até R$300</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="prices" value="3" id="price4"><label for="price4">de R$301 até R$500</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="prices" value="4" id="price5"><label for="price5">a partir de R$01</label>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="filterButtons" id="filter-buttons">
+                <button class="apply"  type="submit">APLICAR</button>
+                <button class="reset" type="reset" id="reset">LIMPIAR</button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="content" id="container">
+          <section class="products" id="content">
+            
+          </section>
+          <div class="more">
+            <button class="carregar" id="carga">CARREGAR MAIS</button>
+          </div>
+        </div>
+        </div>
+    </main>
+    <footer id="footer">
+      <p>Agência M3 - Agência de Performance Digital</p>
+    </footer>
+  
 </body>
-<h1>Desafio m3</h1>
 
 <script src="bundle.js"></script>
 
